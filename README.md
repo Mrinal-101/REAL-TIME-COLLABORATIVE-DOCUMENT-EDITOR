@@ -152,3 +152,7 @@ Feel free to open issues, submit pull requests, or suggest enhancements.
 ---
 ## Screenshots
 
+<img width="1919" height="864" alt="Image" src="https://github.com/user-attachments/assets/1dd675e1-4b41-4da2-9fd5-d0400103be50" />
+<img width="1919" height="866" alt="Image" src="https://github.com/user-attachments/assets/352baf51-797b-433b-a994-841740cd8879" />
+<img width="1919" height="912" alt="Image" src="https://github.com/user-attachments/assets/716ce5f7-573b-4069-8ed5-9b54b49d897e" />
+
