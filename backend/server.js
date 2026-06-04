@@ -1,8 +1,6 @@
 /**
  * Real-Time Collaborative Document Editor - Backend Server with MongoDB
  * Using Node.js, Express, Socket.IO and MongoDB with Mongoose
- * 
- * This is beginner-friendly code designed for CS students learning full-stack development
  */
 
 const express = require('express');
@@ -41,8 +39,8 @@ mongoose.connect(MONGODB_URI, {
 })
 .catch((error) => {
     console.error('❌ MongoDB connection error:', error);
-    console.log('💡 Make sure MongoDB is running on your system');
-    console.log('💡 Or update MONGODB_URI in .env file for cloud MongoDB');
+    console.log(' Make sure MongoDB is running on your system');
+    console.log(' Or update MONGODB_URI in .env file for cloud MongoDB');
 });
 
 // Handle MongoDB connection events
@@ -285,7 +283,7 @@ app.put('/api/documents/:id', async (req, res) => {
         let document;
 
         if (title && content) {
-            // Update both title and content
+           
             document = await Document.findOneAndUpdate(
                 { documentId: docId },
                 { 
@@ -335,7 +333,7 @@ app.get('/api/documents', async (req, res) => {
         const documents = await Document.find({})
             .select('documentId title lastModified createdAt')
             .sort({ lastModified: -1 })
-            .limit(50); // Limit to 50 most recent documents
+            .limit(50); 
 
         const documentList = documents.map(doc => ({
             id: doc.documentId,
@@ -608,10 +606,10 @@ initializeDemoDocument();
 const PORT = process.env.PORT || 5000;
 
 server.listen(PORT, () => {
-    console.log(`🚀 Collaborative Editor Server running on port ${PORT}`);
-    console.log(`🌐 Frontend should connect to: http://localhost:${PORT}`);
-    console.log(`📝 MongoDB Database: ${MONGODB_URI}`);
-    console.log(`💡 Demo document available at ID: "demo-doc"`);
+    console.log(` Collaborative Editor Server running on port ${PORT}`);
+    console.log(` Frontend should connect to: http://localhost:${PORT}`);
+    console.log(` MongoDB Database: ${MONGODB_URI}`);
+    console.log(` Demo document available at ID: "demo-doc"`);
 });
 
 // Graceful shutdown
