@@ -1,22 +1,5 @@
 # Real-Time Collaborative Text Editor
 
-COMPANY : CODTECH IT SOLUTIONS
-
-NAME : MRINAL KASYAP
-
-INTERN ID : CT04DY2139
-
-DOMAIN : FULL STACK DEVELOPMENT
-
-DURATION : 4 WEEKS
-
-MENTOR : NEELA SANTOSH
-
-A full-stack collaborative text editor built with React.js, Node.js, Express, Socket.IO, and MongoDB.  
-It enables multiple users to edit the same document simultaneously with real-time updates and persistent storage.
-
----
-
 ## Features
 
 - Real-time collaborative editing with multiple users
